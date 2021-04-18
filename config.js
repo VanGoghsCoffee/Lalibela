@@ -14,16 +14,36 @@ const config = convict({
         env: 'PORT',
         arg: 'port'
     },
-    db: {
+    interiorDB: {
         host: {
           doc: 'Database host name/IP',
           format: '*',
-          default: 'server1.dev.test'
+          default: 'mysql',
+          env: 'INTERIOR_DB_HOST'
         },
         name: {
           doc: 'Database name',
           format: String,
-          default: 'users'
+          default: 'users',
+          env: 'INTERIOR_DB_NAME'
+        },
+        port: {
+          doc: 'Database port',
+          format: '*',
+          default: '3306',
+          env: 'INTERIOR_DB_PORT'
+        },
+        password: {
+          doc: 'Database password',
+          format: String,
+          default: '',
+          env: 'INTERIOR_DB_PASSWORD'
+        },
+        user: {
+          doc: 'Database user',
+          format: String,
+          default: '',
+          env: 'INTERIOR_DB_USER'
         }
       }
 })

@@ -1,4 +1,4 @@
-const Product = require('./productsModel');
+const Product = require('./ProductsModel.js');
 
 class ProductBuilder {
     constructor() {

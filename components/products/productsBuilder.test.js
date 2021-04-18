@@ -1,6 +1,6 @@
 const test = require('ava');
-const ProductBuilder = require('./productsBuilder');
-const Product = require('./productsModel');
+const ProductBuilder = require('./ProductsBuilder');
+const Product = require('./ProductsModel.js');
 
 test('When building a product, should return Product', t => {
     const product = new ProductBuilder().build();

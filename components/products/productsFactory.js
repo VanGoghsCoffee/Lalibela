@@ -1,5 +1,5 @@
 
-const ProductBuilder = require('./productsBuilder');
+const ProductBuilder = require('./ProductsBuilder');
 
 const ProductFactory = {
     buildTestProduct: () => {
